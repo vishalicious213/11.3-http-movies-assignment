@@ -60,6 +60,8 @@ body {
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
+  width: 3.5rem;
+  text-align: center;
 }
 .save-button:hover {
   background-color: green;
@@ -69,9 +71,28 @@ body {
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+  text-decoration: none;
+  width: 3.5rem;
+  text-align: center;
 }
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.update-button {
+  position: absolute;
+  top: 65px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightcoral;
+  text-decoration: none;
+  width: 3.5rem;
+  text-align: center;
+}
+.update-button:hover {
+  background-color: orangered;
+  color: white;
 }
