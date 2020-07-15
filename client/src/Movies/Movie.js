@@ -37,7 +37,7 @@ function Movie({ addToSavedList }) {
       </div>
 
       <div onClick={UpdateMovie}>
-        <Link className="update-button" to="/update-movie/:id">Update</Link>
+        <Link className="update-button" to={`/update-movie/${params.id}`}>Update</Link>
       </div>
     </div>
   );
