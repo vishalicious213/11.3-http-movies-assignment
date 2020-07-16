@@ -96,3 +96,38 @@ body {
   background-color: orangered;
   color: white;
 }
+
+/* UpdateForm */
+
+.updateForm {
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  margin: 1rem auto;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formField {
+  margin-top: 1rem;
+}
+
+input {
+  width: 100%;
+}
+
+.update-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 5rem;
+  margin: .5rem;
+}

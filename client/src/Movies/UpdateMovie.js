@@ -30,27 +30,26 @@ const UpdateMovie = () => {
     return (
         <form className='updateForm'>
             {/* <div>{`-Update Movie ${params.id}-`}</div> */}
-            <div>
-                Title:
-                <input type='text' name='title' placeholder={movie.title} value='' onChange={handleChange}/>
-            </div>
+            <div className='formField'>Title:</div>
+            <input type='text' name='title' placeholder={movie.title} value='' onChange={handleChange}/>
 
-            <div>
-                Director:
-                <input type='text' name='director' placeholder={movie.director} value='' onChange={handleChange}/>
-            </div>
+            <div className='formField'>Director:</div>
+            <input type='text' name='director' placeholder={movie.director} value='' onChange={handleChange}/>
 
-            <div>
-                Metascore:
-                <input type='text' name='metascore' placeholder={movie.metascore} value='' onChange={handleChange}/>
-            </div>
+            <div className='formField'>Metascore:</div>
+            <input type='text' name='metascore' placeholder={movie.metascore} value='' onChange={handleChange}/>
 
-            <div>Stars:</div>
+            <div className='formField'>Stars:</div>
             {movie.stars.map(star => (
                 <div key={star} className="movie-star">
                     <input type='text' name='star' placeholder={star} value='' onChange={handleChange}/>
                 </div>
             ))}
+
+            <div className="update-buttons">
+                <button className="button">Save</button>
+                <button className="button">Cancel</button>
+            </div>
         </form>
     )
 }
